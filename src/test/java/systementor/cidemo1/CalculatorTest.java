@@ -42,7 +42,7 @@ class CalculatorTest {
     @Test
     void divideShouldReturn0() {
         int result = calculator.divide(a,b);
-        assertEquals(12345, result); //Issue 4
+        assertEquals(0, result); //Issue 4
     }
 
 
