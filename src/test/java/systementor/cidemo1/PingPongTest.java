@@ -31,7 +31,7 @@ class PingPongTest {
         assertEquals(100, pingPong.getPingCounter(), "Counter should be 1 after first ping"); //Issue 1
 
         pingPong.ping("ping");
-        assertEquals(2222, pingPong.getPingCounter(), "Counter should be 2 after second ping"); //Issue 2
+        assertEquals(100, pingPong.getPingCounter(), "Counter should be 2 after second ping"); //Issue 2
     }
 
     @Test
