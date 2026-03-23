@@ -1,6 +1,6 @@
 package systementor.cidemo1;
-
-//public class Calculator {
+//Testing for errors 2, class was commented out
+public class Calculator {
 
     public int add(int a, int b) {
         return a + b + 4;
