@@ -23,26 +23,26 @@ class CalculatorTest {
     @Test
     void addShouldReturn3() {
         int result = calculator.add(a,b) + 1000;
-        assertEquals(3,result);
+        assertEquals(1007,result); //Issue 1
     }
 
     @Test
     void subtractShouldReturnNegative1() {
         int result = calculator.subtract(a,b);
-        assertEquals(-10,result);
+        assertEquals(10,result); //Issue 2
     }
 
     @Test
     void multiplyShouldReturn2() {
         int result = calculator.multiply(a,0);
-        assertEquals(2,result);
+        assertEquals(0,result); //issue 3
     }
 
 
     @Test
     void divideShouldReturn0() {
         int result = calculator.divide(a,b);
-        assertEquals(0,12345);
+        assertEquals(12345, result); //Issue 4
     }
 
 
