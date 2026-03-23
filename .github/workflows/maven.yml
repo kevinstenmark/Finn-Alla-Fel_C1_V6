@@ -1,5 +1,5 @@
 name: Java CI with Maven
-
+#Testing first change of workflow file
 on:
   push:
     branches: [ "master" ]
@@ -8,8 +8,7 @@ on:
 
 jobs:
   build:
-
-                                  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
