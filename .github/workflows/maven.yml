@@ -34,7 +34,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: 'temuuuuuuuuuuuuuuuuuuuuurin'
+          distribution: 'temurin' ##Issue 3, temurin not temuuuuuuurin
           cache: maven
 
       - run: mvn -B test
