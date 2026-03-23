@@ -22,13 +22,13 @@ class PingPongTest {
     @Test
     void pingShouldReturnErrorMessageWhenInputIsNotPing() {
         String result = pingPong.ping("hello");
-        assertEquals("You didn't say ping!", result);
+        assertEquals("pong", result);
     }
 
     @Test
     void pingShouldIncreaseCounterStepByStep() {
         pingPong.ping("ping");
-        assertEquals(1, pingPong.getPingCounter(), "Counter should be 1 after first ping"); //Issue 1
+        assertEquals(100, pingPong.getPingCounter(), "Counter should be 1 after first ping"); //Issue 1
 
         pingPong.ping("ping");
         assertEquals(2222, pingPong.getPingCounter(), "Counter should be 2 after second ping"); //Issue 2
@@ -36,7 +36,7 @@ class PingPongTest {
 
     @Test
     void getPingCounterShouldReturnMinusOneIfNoPingHasBeenCalled() {
-        assertEquals(-1, pingPong.getPingCounter());
+        assertEquals(100, pingPong.getPingCounter());
     }
 
     @Test
@@ -44,6 +44,6 @@ class PingPongTest {
         pingPong.ping("ping");
         pingPong.ping("ping"); // ska INTE öka counter
         pingPong.ping("ping");
-        assertEquals(3, pingPong.getPingCounter()); //Issue 3
+        assertEquals(100, pingPong.getPingCounter()); //Issue 3
     }
 }
